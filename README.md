@@ -14,7 +14,7 @@ The `ThereminQ - QuantumOPS` ecosystem is composed of several key components, ea
 - **`twobombs`**: The core repository containing the build system itself. It orchestrates the building of all other components
 - **`deploy-nvidia-docker`**: A utility for enabling GPU acceleration within Docker, setting up the NVIDIA Docker Desktop UI
 - **`cudacluster`**: A component for creating and managing CUDA & ROCm clusters for distributed GPU computing tasks
-- **`qrackmin`**: A HPC QC package with support for various backends, including CUDA, OpenCL (pocl), Qiskit, AWS BraKET etc.
+- **`thereminq-hpc`**: A HPC QC package with support for various backends, including CUDA, OpenCL (pocl), Qiskit, AWS BraKET etc.
 - **`thereminq-classiq`**: Integration with the `Classiq` platform for quantum algorithm design leveraging `C` and `OpenCL`
 - **`thereminq-bonsai`**: Integration with the Bonsai platform for visualisations in `ThereminQ-Classic`
 - **`thereminq-tensors`**: Focused on tensor network simulations for quantum circuits and much larger and complex systems
@@ -60,9 +60,9 @@ To use the build system to build all the `ThereminQ - QuantOPS` container images
    Once the builds are complete, the container images will be available in the local Docker registry. You can browse the registry by opening a web browser and navigating to `http://localhost`.
 
 5. **Publish the images (optional):**
-   To publish the images to Docker Hub, you will need to have Docker Hub credentials configured on your machine. Then, you can run the appropriate `publish-*.sh` script to publish the images for a specific component. For example, to publish the `qrackmin` images, you would run:
+   To publish the images to Docker Hub, you will need to have Docker Hub credentials configured on your machine. Then, you can run the appropriate `publish-*.sh` script to publish the images for a specific component. For example, to publish the `thereminq-tensors` images, you would run:
    ```bash
-   ./publish-qrackmin.sh
+   ./publish-thereminq-tensors.sh
    ```
 
 ---
